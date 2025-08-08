@@ -12,7 +12,7 @@ public class LongestSubstringTests
     public void Test1(string input, int expected)
     {
         // Arrange
-        var sut = new LongestSubstring();
+        var sut = new Solution();
 
         // Act
         var actual = sut.LengthOfLongestSubstring(input);

@@ -1,8 +1,7 @@
 using System.Reflection;
 
-public class LongestSubstring
+public partial class Solution
 {
-
     public int LengthOfLongestSubstring(string s)
     {
         int l = 0;
