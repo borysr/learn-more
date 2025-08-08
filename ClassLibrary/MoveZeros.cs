@@ -1,4 +1,4 @@
-public partial class Solution
+public partial class LeetcodeSolution
 {
     public void MoveZeroes(int[] nums)
     {

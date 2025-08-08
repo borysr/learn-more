@@ -1,6 +1,6 @@
 using System.Reflection;
 
-public partial class Solution
+public partial class LeetcodeSolution
 {
     public int LengthOfLongestSubstring(string s)
     {

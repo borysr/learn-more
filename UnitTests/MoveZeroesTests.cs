@@ -12,7 +12,7 @@ public class MoveZeroesTests
     public void Test1(int[] input, int[] expected)
     {
         // Arrange
-        var moveZeros = new Solution();
+        var moveZeros = new LeetcodeSolution();
 
         // Act
         moveZeros.MoveZeroes(input);
