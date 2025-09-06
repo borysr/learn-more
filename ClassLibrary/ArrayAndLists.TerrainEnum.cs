@@ -1,6 +1,6 @@
 namespace ClassLibrary
 {
-    public class ArrayAndLists
+    public partial class ArrayAndLists
     {
         public enum TerrainEnum
         {
