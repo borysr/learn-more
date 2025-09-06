@@ -11,13 +11,16 @@ var str = new string[] { "Bet", "Don", "Mary", "Ann" };
 
 // -42, -11, -9, 0, 1, 6, 12, 68, 90 
 // DsaSolution.SelectionSort(nums);
-DsaSolution.InsertionSort(nums);
+// DsaSolution.InsertionSort(nums);
+DsaSolution.QuickSort(nums);
 Console.WriteLine(string.Join(" | ", nums));
 Console.ReadLine();
 // DsaSolution.SelectionSort(nums);
-DsaSolution.InsertionSort(str);
+// DsaSolution.InsertionSort(str);
+DsaSolution.QuickSort(str);
 Console.WriteLine(string.Join(" | ", str));
 Console.ReadLine();
+
 
 #endregion
 
