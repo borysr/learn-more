@@ -1,16 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System.Globalization;
-using System.Runtime.CompilerServices;
+﻿using System.Globalization;
 using System.Text;
 using ClassLibrary;
 using static ClassLibrary.ArrayAndLists;
 
 Console.WriteLine("Hello, World!");
 
+#region UtilityMethods
 // TerrainMap();
-Traffic();
-
-
+// Traffic();
 static string[] GetMonthNames()
 {
     string[] names = new string[12];
@@ -84,4 +81,4 @@ static void TerrainMap(TerrainEnum[,]? inMmap = null)
     Console.ForegroundColor = ConsoleColor.Gray;
     Console.ReadLine();
 }
-
+#endregion
