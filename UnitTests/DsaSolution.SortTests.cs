@@ -15,8 +15,8 @@ namespace UnitTests
 
         public void TestIntArraySort(int[] arr, int[] expected)
         {
-            var sut = new DsaSolution { };
-            sut.SelectionSort(arr);
+            // var sut = new DsaSolution { };
+            DsaSolution.SelectionSort(arr);
             Assert.Equal(expected, arr);
         }
 
@@ -25,7 +25,7 @@ namespace UnitTests
         public void TestStringArraySort(string[] arr, string[] expected)
         {
             var sut = new DsaSolution { };
-            sut.SelectionSort(arr);
+            DsaSolution.SelectionSort(arr);
             Assert.Equal(expected, arr);
         }
     }
@@ -44,7 +44,7 @@ namespace UnitTests
         public void TestIntArraySort(int[] arr, int[] expected)
         {
             var sut = new DsaSolution { };
-            sut.InsertionSort(arr);
+            DsaSolution.InsertionSort(arr);
             Assert.Equal(expected, arr);
         }
 
@@ -53,10 +53,11 @@ namespace UnitTests
         public void TestStringArraySort(string[] arr, string[] expected)
         {
             var sut = new DsaSolution { };
-            sut.InsertionSort(arr);
+            DsaSolution.InsertionSort(arr);
             Assert.Equal(expected, arr);
         }
-    }    /// <summary>
+    }
+    /// <summary>
     /// BubleSortTests
     /// </summary>
     public class BubleSortTests
@@ -70,7 +71,7 @@ namespace UnitTests
         public void TestIntArraySort(int[] arr, int[] expected)
         {
             var sut = new DsaSolution { };
-            sut.BubleSort(arr);
+            DsaSolution.BubleSort(arr);
             Assert.Equal(expected, arr);
         }
 
@@ -79,7 +80,7 @@ namespace UnitTests
         public void TestStringArraySort(string[] arr, string[] expected)
         {
             var sut = new DsaSolution { };
-            sut.BubleSort(arr);
+            DsaSolution.BubleSort(arr);
             Assert.Equal(expected, arr);
         }
     }

@@ -5,7 +5,7 @@ public partial class DsaSolution
         return nums;
     }
 
-    private void Swap<T>(T[] arr, int i, int j) where T : IComparable
+    private static void Swap<T>(T[] arr, int i, int j) where T : IComparable
     {
         T tmp = arr[i];
         arr[i] = arr[j];

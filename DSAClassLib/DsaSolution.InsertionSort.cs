@@ -1,6 +1,6 @@
 public partial class DsaSolution
 {
-    public void InsertionSort<T>(T[] arr) where T : IComparable {
+    public static void InsertionSort<T>(T[] arr) where T : IComparable {
         for (int i = 1; i < arr.Length; i++)
         {
             int j = i;

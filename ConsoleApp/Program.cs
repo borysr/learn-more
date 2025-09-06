@@ -5,6 +5,22 @@ using static ClassLibrary.ArrayAndLists;
 
 Console.WriteLine("Hello, World!");
 
+#region sorts
+var nums = new int[] { -11, 12, -42, 0, 1, 90, 68, 6, -9 };
+var str = new string[] { "Bet", "Don", "Mary", "Ann" };
+
+// -42, -11, -9, 0, 1, 6, 12, 68, 90 
+// DsaSolution.SelectionSort(nums);
+DsaSolution.InsertionSort(nums);
+Console.WriteLine(string.Join(" | ", nums));
+Console.ReadLine();
+// DsaSolution.SelectionSort(nums);
+DsaSolution.InsertionSort(str);
+Console.WriteLine(string.Join(" | ", str));
+Console.ReadLine();
+
+#endregion
+
 #region UtilityMethods
 // TerrainMap();
 // Traffic();

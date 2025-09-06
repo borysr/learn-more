@@ -1,6 +1,6 @@
 public partial class DsaSolution
 {
-    public void SelectionSort<T>(T[] arr) where T : IComparable {
+    public static void SelectionSort<T>(T[] arr) where T : IComparable {
         for (int i = 0; i < arr.Length; i++)
         {
             int minIdx = i;
