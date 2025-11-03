@@ -1,3 +1,5 @@
+using ClassLibrary.Leetcode;
+
 namespace UnitTests
 {
     public class SearchRangeTests
@@ -6,7 +8,7 @@ namespace UnitTests
         [InlineData(new int[] { }, 0, new int[] { -1, -1})]
         public void Test1(int[] arr, int item,  int[] expected)
         {
-            var sut = new LeetcodeSolution { };
+            var sut = new LeetcodeBase { };
             var actual = sut. SearchRange(arr, item);
             Assert.True(false);
         }

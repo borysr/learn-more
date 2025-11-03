@@ -1,6 +1,8 @@
+namespace ClassLibrary.DSAClassLib;
 public partial class DsaSolution
 {
-    public static void BubleSort<T>(T[] arr) where T : IComparable {
+    public static void BubleSort<T>(T[] arr) where T : IComparable
+    {
         for (int i = 0; i < arr.Length; i++)
         {
             bool isAnyChange = false;

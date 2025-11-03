@@ -1,4 +1,6 @@
-﻿namespace UnitTests;
+﻿using ClassLibrary.Leetcode;
+
+namespace UnitTests;
 
 public class MoveZeroesTests
 {
@@ -12,7 +14,7 @@ public class MoveZeroesTests
     public void Test1(int[] input, int[] expected)
     {
         // Arrange
-        var moveZeros = new LeetcodeSolution();
+        var moveZeros = new LeetcodeBase();
 
         // Act
         moveZeros.MoveZeroes(input);

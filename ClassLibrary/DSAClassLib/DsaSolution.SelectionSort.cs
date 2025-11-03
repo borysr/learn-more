@@ -1,3 +1,4 @@
+namespace ClassLibrary.DSAClassLib;
 public partial class DsaSolution
 {
     public static void SelectionSort<T>(T[] arr) where T : IComparable {

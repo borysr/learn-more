@@ -1,4 +1,6 @@
-public partial class LeetcodeSolution
+namespace ClassLibrary.Leetcode;
+
+public partial class LeetcodeBase
 {
     public int LengthOfLongestSubstring(string s)
     {
@@ -11,7 +13,7 @@ public partial class LeetcodeSolution
         {
             if (map.ContainsKey(s[i]))
             {
-                l = Math.Max(l, map[s[i]]+1);
+                l = Math.Max(l, map[s[i]] + 1);
             }
             r++;
             map[s[i]] = i;

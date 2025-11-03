@@ -1,4 +1,4 @@
-
+namespace ClassLibrary.DSAClassLib;
 public partial class DsaSolution
 {
     public static void QuickSort<T>(T[] array) where T : IComparable

@@ -1,3 +1,5 @@
+using ClassLibrary.Leetcode;
+
 namespace UnitTests;
 
 public class LongestSubstringTests
@@ -12,7 +14,7 @@ public class LongestSubstringTests
     public void Test1(string input, int expected)
     {
         // Arrange
-        var sut = new LeetcodeSolution();
+        var sut = new LeetcodeBase();
 
         // Act
         var actual = sut.LengthOfLongestSubstring(input);
