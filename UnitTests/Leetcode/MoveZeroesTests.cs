@@ -1,6 +1,4 @@
-﻿using ClassLibrary.Leetcode;
-
-namespace UnitTests;
+﻿namespace UnitTests;
 
 public class MoveZeroesTests
 {

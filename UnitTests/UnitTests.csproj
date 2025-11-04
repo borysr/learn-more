@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
-    <ProjectReference Include="..\DSAClassLib\DSAClassLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>

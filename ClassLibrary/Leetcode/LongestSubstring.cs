@@ -1,5 +1,3 @@
-namespace ClassLibrary.Leetcode;
-
 public partial class LeetcodeBase
 {
     public int LengthOfLongestSubstring(string s)
