@@ -2,6 +2,10 @@ public partial class LeetcodeBase
 {
     public int LengthOfLongestSubstring(string s)
     {
+        // Sliding window + HashMap
+        // Add each char to the map with its index
+        // If the char already exists, move the left pointer to the right of the 
+        // previous index
         int l = 0;
         int r = 0;
         int res = 0;
