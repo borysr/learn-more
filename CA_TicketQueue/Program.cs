@@ -34,9 +34,11 @@ void MonitorQueue()
 }
 void ProcessInput(string input)
 {
-    Thread.Sleep(2000);
-
-    lock(requestLock) {
+    if ( Monitor.TryEnter(requestLock, 2000)) {
+        Thread.Sleep(3000);
+        try
+        {
+            // Critical section
         switch (input)
         {
             case "c" : 
@@ -49,17 +51,25 @@ void ProcessInput(string input)
                     Console.WriteLine($"All teackets are cancelled. There are {maxNumberOfSeats-numberOfTickets} seats available.");
                 }
                 break;
-        case "b" :
-                if (numberOfTickets < maxNumberOfSeats) 
-                {
-                    numberOfTickets++; 
-                    Console.WriteLine($"Your seat is booked. There are {maxNumberOfSeats-numberOfTickets} seats left.");
-                } else {
-                    Console.WriteLine($"All seats are booked. There are no seats available.");
-                }
-                break;
-        default :
-                break;
+            case "b" :
+                    if (numberOfTickets < maxNumberOfSeats) 
+                    {
+                        numberOfTickets++; 
+                        Console.WriteLine($"Your seat is booked. There are {maxNumberOfSeats-numberOfTickets} seats left.");
+                    } else {
+                        Console.WriteLine($"All seats are booked. There are no seats available.");
+                    }
+                    break;
+            default :
+                    break;
+            }
         }
+        finally
+        {
+            Monitor.Exit(requestLock);
+        }
+    } else
+    {
+        System.Console.WriteLine("System is busy. Please try again later.");
     }
 }
