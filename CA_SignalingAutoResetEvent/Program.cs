@@ -1,5 +1,5 @@
 ﻿///////////////////////////////////////////////////////////////////////
-// Single Worker thread
+// Multiple Worker thread
 /////////////////////////////////////////////////////////////////////// 
 using AutoResetEvent autoResetEvent = new AutoResetEvent(false);
 string? userInput = null;
@@ -42,42 +42,42 @@ void Worker()
     }
 }
 
-///////////////////////////////////////////////
-// Multiple Worker threads
-//////////////////////////////////////////////
-using AutoResetEvent autoResetEvent = new AutoResetEvent(false);
-string? userInput = null;
+// ///////////////////////////////////////////////
+// // Single Worker threads
+// //////////////////////////////////////////////
+// using AutoResetEvent autoResetEvent = new AutoResetEvent(false);
+// string? userInput = null;
 
 
-// Start the worker thread
-Thread workerThread = new Thread(Worker);
-workerThread.Start();
+// // Start the worker thread
+// Thread workerThread = new Thread(Worker);
+// workerThread.Start();
 
-// Main thread receives user input
-Console.WriteLine("Server is running. Type 'exit' to stop.");
-while (true)
-{
-    userInput = Console.ReadLine();    
+// // Main thread receives user input
+// Console.WriteLine("Server is running. Type 'exit' to stop.");
+// while (true)
+// {
+//     userInput = Console.ReadLine();    
 
-    // Signal the worker thread if input is "go"
-    if (userInput.ToLower() == "go")
-    {
-        autoResetEvent.Set();
-    }
-}
+//     // Signal the worker thread if input is "go"
+//     if (userInput.ToLower() == "go")
+//     {
+//         autoResetEvent.Set();
+//     }
+// }
 
 
-void Worker()
-{
-    while (true)
-    {
-        Console.WriteLine("Worker thread is waiting for signal.");
-        // Wait for the signal from the main thread
-        autoResetEvent.WaitOne();
+// void Worker()
+// {
+//     while (true)
+//     {
+//         Console.WriteLine("Worker thread is waiting for signal.");
+//         // Wait for the signal from the main thread
+//         autoResetEvent.WaitOne();
         
-        Console.WriteLine("Worker thread proceeds.");
-        // Simulate processing time
-        Thread.Sleep(2000);
-    }
-}
+//         Console.WriteLine("Worker thread proceeds.");
+//         // Simulate processing time
+//         Thread.Sleep(2000);
+//     }
+// }
 
