@@ -1,0 +1,21 @@
+﻿var items = Enumerable.Range(1, 200);
+
+var evenNumbers = items.AsParallel().Where(x =>   // add AsOrdered if need in same sequence of processing
+{
+    Console.WriteLine($"Processing number {x}; Thread Id: {Thread.CurrentThread.ManagedThreadId}");
+    return (x % 2 == 0);
+});
+
+Console.WriteLine();
+
+//Console.WriteLine($"There are {evenNumbers.Count()} even numbers in the collection.");
+
+//foreach (var item in evenNumbers)
+//{
+//    Console.WriteLine($"{item}: Thread Id: {Thread.CurrentThread.ManagedThreadId}");
+//}
+
+evenNumbers.ForAll(item =>
+{
+    Console.WriteLine($"{item}: Thread Id: {Thread.CurrentThread.ManagedThreadId}");
+});
