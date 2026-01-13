@@ -6,11 +6,7 @@ object lockSum = new object();
 Parallel.For(
     0,
     array.Length,
-<<<<<<< HEAD
     () => 0, // any type can be used - i.e. new Dictionary<string, string>() 
-=======
-    () => 0,
->>>>>>> 0b6542b67ec2aedaa4f58c0f0778838f268a9d28
     (i, state, tls) =>  // tls - thread local storage, to not lock shared var sum too much
     {
         tls += array[i];
@@ -18,11 +14,7 @@ Parallel.For(
     },
     tls =>
     {
-<<<<<<< HEAD
         lock (lockSum) // one lock per thread to update shared sum
-=======
-        lock (lockSum)
->>>>>>> 0b6542b67ec2aedaa4f58c0f0778838f268a9d28
         {
             sum += tls;
             Console.WriteLine($"The task id: {Task.CurrentId}");
