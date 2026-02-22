@@ -1,0 +1,15 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CA_Identity/CA_Identity.csproj" />
+  <Project Path="CA_TicketQueue/CA_TicketQueue.csproj" />
+  <Project Path="ClassLibrary/ClassLibrary.csproj" />
+  <Project Path="ConsoleApp/ConsoleApp.csproj" />
+  <Project Path="ConsoleAppMT/ConsoleAppMT.csproj" />
+  <Project Path="ConsoleQueueIntro/ConsoleQueueIntro.csproj" />
+  <Project Path="DivideAndConquer/DivideAndConquer.csproj" />
+  <Project Path="UnitTests/UnitTests.csproj" />
+</Solution>
