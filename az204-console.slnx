@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CA_azstor/CA_azstor.csproj" />
+  <Project Path="CA_Identity/CA_Identity.csproj" />
+  <Project Path="CA_IdentityHost/CA_IdentityHost.csproj" />
+</Solution>

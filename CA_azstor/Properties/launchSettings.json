@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CA_azstor": {
+      "commandName": "Project",
+      "workingDirectory": "."
+    }
+  }
+}
