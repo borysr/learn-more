@@ -1,0 +1,25 @@
+<Solution>
+  <Project Path="CA_BlockingCollection/CA_BlockingCollection.csproj" />
+  <Project Path="CA_Global_Mutex_Example/CA_Global_Mutex_Example.csproj" />
+  <Project Path="CA_ParallelLoops/CA_ParallelLoops.csproj" />
+  <Project Path="CA_ParallelLoopsBreak/CA_ParallelLoopsBreak.csproj" />
+  <Project Path="CA_ParallelLoopsCancellation/CA_ParallelLoopsCancellation.csproj" />
+  <Project Path="CA_ParallelLoopsExceptions/CA_ParallelLoopsExceptions.csproj" />
+  <Project Path="CA_ParallelLoopsStop/CA_ParallelLoopsStop.csproj" />
+  <Project Path="CA_ParallelLoopsThreadLocalStorage/CA_ParallelLoopsThreadLocalStorage.csproj" />
+  <Project Path="CA_PLINQ_basics/CA_PLINQ_basics.csproj" />
+  <Project Path="CA_ReaderWriterCache/CA_ReaderWriterCache.csproj" />
+  <Project Path="CA_Semaphore/CA_Semaphore.csproj" />
+  <Project Path="CA_SignalingAutoResetEvent/CA_SignalingAutoResetEvent.csproj" />
+  <Project Path="CA_TaskCancellation/CA_TaskCancellation.csproj" />
+  <Project Path="CA_TaskChainUnwrap/CA_TaskChainUnwrap.csproj" />
+  <Project Path="CA_TaskContinueWith/CA_TaskContinueWith.csproj" />
+  <Project Path="CA_TaskExceptions/CA_TaskExceptions.csproj" />
+  <Project Path="CA_TaskWait/CA_TaskWait.csproj" />
+  <Project Path="CA_TaskWhenAnyWhenAll/CA_TaskWhenAnyWhenAll.csproj" />
+  <Project Path="CA_TicketQueue/CA_TicketQueue.csproj" />
+  <Project Path="CA_TwoWaySignaling/CA_TwoWaySignaling.csproj" />
+  <Project Path="ConsoleAppMT/ConsoleAppMT.csproj" />
+  <Project Path="ConsoleQueueIntro/ConsoleQueueIntro.csproj" />
+  <Project Path="DivideAndConquer/DivideAndConquer.csproj" />
+</Solution>

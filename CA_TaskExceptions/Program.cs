@@ -20,6 +20,7 @@
         Console.ReadLine();
 
 // 3. Exceptions are stored in the task itself. 
+/*
 	using System.Text.Json;
 	
 	using var client = new HttpClient();
@@ -86,3 +87,4 @@
 	Console.WriteLine("Press enter key to exit.");
         Console.ReadLine();
 
+*/
